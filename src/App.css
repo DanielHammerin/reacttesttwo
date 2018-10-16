@@ -1,0 +1,155 @@
+.App {
+    font-family: 'Raleway', sans-serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: aliceblue;
+  height: 250px;
+  padding: 20px;
+  color: #333333;
+  text-align:center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.navBar {
+    height: 50px;
+    background-color: azure;
+}
+
+.navBar p {
+    color: #1b1b1b;
+}
+
+.pageContent {
+    background-color: aliceblue;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+p {
+    padding: 15px;
+}
+
+.pageMainContent {
+    display: inline-flex;
+}
+
+.threadSmallContainer {
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 200px;
+    min-width: 600px;
+    max-width: 1500px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.threadSmallContainer h1 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline;
+}
+
+.threadSmallContainer h3 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline;
+}
+
+.threadSmallContainer h2 {
+    font-size:17px;
+}
+
+.threadSmallContainer #repliesCount {
+    float:right;
+    margin-top:0;
+    padding-right:10px;
+}
+
+.asideContainer {
+    float: right;
+    background-color: white;
+    height: 600px;
+    max-width: 500px;
+    min-width: 500px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.chatBox {
+    height: inherit;
+    width: inherit;
+}
+
+.conversationBox {
+    height: 540px;
+    width: 480px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: azure;
+    overflow-y: scroll;
+}
+
+.newMessageBoxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 40px;
+}
+
+.chatMessageList {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.chatMessageList li div{
+    display: inline;
+
+}
+
+.chatNewMessageTextBox {
+    resize: none;
+    width: 420px;
+    height: 30px;
+}
+
+.sendNewMessageButtonContainer {
+    display: inline;
+}
+
+#chatSendMessageButton {
+    margin-left: 8px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:inherit;
+    height: 200px;
+}
+
+@keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
