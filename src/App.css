@@ -28,8 +28,14 @@
     background-color: azure;
 }
 
-.navBar p {
+.navBar ul {
     color: #1b1b1b;
+    padding-top: 15px;
+}
+
+.navBar ul li{
+    color: #1b1b1b;
+    display: inline;
 }
 
 .pageContent {
@@ -152,4 +158,9 @@ p {
 @keyframes App-logo-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+}
+
+.imageThumbnail {
+    max-height: 100px;
+    max-width: 200px;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Thread from './Thread';
+import Thread from './ThreadMiniature';
 
 class ThreadList extends Component {
     constructor(props) {
