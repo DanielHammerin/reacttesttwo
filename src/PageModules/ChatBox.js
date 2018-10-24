@@ -109,17 +109,22 @@ class ChatApp extends Component {
 
     render() {
         return (
-            <div className="chatBox">
-                <div className="conversationBox">
-                    <MessageList messages={this.state.messages} />
+            <React.Fragment>
+                <div className="chat-minimize-button">
+                    <div className="chat-minimize-button-dash"/>
                 </div>
-                <div className="newMessageBoxContainer">
-                    <textarea className="chatNewMessageTextBox" value={this.state.message} onKeyDown={this.onEnterPress} onChange={ev => this.setState({ message: ev.target.value })} />
-                    <div className="sendNewMessageButtonContainer">
-                        <button id="chatSendMessageButton" onClick={this.submit} >Send</button>
+                <div className="chatBox">
+                    <div className="conversationBox">
+                        <MessageList messages={this.state.messages} />
+                    </div>
+                    <div className="newMessageBoxContainer">
+                        <textarea className="chatNewMessageTextBox" value={this.state.message} onKeyDown={this.onEnterPress} onChange={ev => this.setState({ message: ev.target.value })} />
+                        <div className="sendNewMessageButtonContainer">
+                            <button id="chatSendMessageButton" onClick={this.submit} >Send</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </React.Fragment>
         );
     }
 }

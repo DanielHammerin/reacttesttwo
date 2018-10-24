@@ -92,13 +92,17 @@ p {
 }
 
 .asideContainer {
-    float: right;
     background-color: white;
-    height: 600px;
+    height: 415px;
     max-width: 500px;
     min-width: 500px;
     margin-top: 20px;
     margin-right: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px #333333 groove;
+    border-radius: 5px;
 }
 
 .chatBox {
@@ -107,9 +111,9 @@ p {
 }
 
 .conversationBox {
-    height: 540px;
+    height: 350px;
     width: 480px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 10px;
     background-color: azure;
     overflow-y: scroll;
@@ -163,4 +167,24 @@ p {
 .imageThumbnail {
     max-height: 100px;
     max-width: 200px;
+}
+
+.chat-minimize-button {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: coral;
+    float: right;
+}
+
+.chat-minimize-button-dash {
+    height: 1px;
+    width: 10px;
+    margin-top: 9px;
+    margin-left: 4px;
+    background-color: #333333;
+}
+
+.chat-minimize-button-dash, .chat-minimize-button:hover {
+    cursor: pointer;
 }
